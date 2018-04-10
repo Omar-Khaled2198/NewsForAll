@@ -1,48 +1,49 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>NewsForAll</title>
-<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="utf-8">
+    <title>NewsForAll</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
 
 </head>
 <header>
-  News For All
+    News For All
 </header>
 <body>
 <div class="sidenav">
-  <button id="home" onclick="load()">Home</button>
-  <div class="splitter"></div>
-  <input id="search-input" type="text" name="search" placeholder="Search.....">
-  <button id="search" onclick="search()">Search</button>
-  <div class="splitter"></div>
-  <div id="sources">
+    <button id="home" onclick='$("#flex").load("data.php?option=home")'>Home</button>
+    <div class="splitter"></div>
+    <input id="search-input" type="text" name="search" placeholder="Search.....">
+    <button id="search" onclick='$("#flex").load("data.php?option=search&q="+$("#search-input").val())'>Search</button>
+    <div class="splitter"></div>
+    <div id="sources">
 
-  </div>
-  <button id="filter" onclick="filter()">Filter</button>
-  <button id="clear" onclick="clearing()">Clear</button>
+    </div>
+    <button id="filter" onclick='$("#flex").load("data.php?option=filter&choices="+userChoices)'>Filter</button>
+    <button id="clear" onclick="clearing()">Clear</button>
 
 </div>
 <div class="topnav">
-  <button onclick="category(this.id)" id="ent" value="entertainment">Entertainment</button>
-  <button onclick="category(this.id)" id="gen" value="general">General</button>
-  <button onclick="category(this.id)" id="bus" value="business">Business</button>
-  <button onclick="category(this.id)" id="hel" value="health">Health</button>
-  <button onclick="category(this.id)" id="sci" value="science">Science</button>
-  <button onclick="category(this.id)" id="spo" value="sports">Sports</button>
-  <button onclick="category(this.id)" id="tech" value="technology">Technology</button>
+    <button onclick='$("#flex").load("data.php?option=category&category="+this.value)' id="ent" value="entertainment">Entertainment</button>
+    <button onclick='$("#flex").load("data.php?option=category&category="+this.value)' id="gen" value="general">General</button>
+    <button onclick='$("#flex").load("data.php?option=category&category="+this.value)' id="bus" value="business">Business</button>
+    <button onclick='$("#flex").load("data.php?option=category&category="+this.value)' id="hel" value="health">Health</button>
+    <button onclick='$("#flex").load("data.php?option=category&category="+this.value)' id="sci" value="science">Science</button>
+    <button onclick='$("#flex").load("data.php?option=category&category="+this.value)' id="spo" value="sports">Sports</button>
+    <button onclick='$("#flex").load("data.php?option=category&category="+this.value)' id="tech" value="technology">Technology</button>
     <div id="weather">
-        <div id="icon-container"><img id="weather-icon"></div>
-        <div id="weather-desc">
 
-        </div>
     </div>
 </div>
+
 <div id="flex">
 
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/script.js"></script>
-  <script language='javascript'>load();weather();loadSources();</script>
 </div>
+
+<script src="js/script.js"></script>
+<script language='javascript'>$("#weather").load("data.php?option=weather")</script>
+<script language='javascript'>$("#flex").load("data.php?option=home")</script>
+<script language="JavaScript">$("#sources").load("data.php?option=sources")</script>
 </body>
 </html> 

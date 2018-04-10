@@ -1,103 +1,103 @@
 *
 {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 header
 {
 
-  text-align: center;
-  font-size: 50px;
-  font-weight: bold;
-  text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
     color: white;
-  padding: 20px;
+    padding: 20px;
     margin-top: 15px;
-  letter-spacing: 50px;
-  box-shadow: 0 1px 30px rgba(0,0,0,.4);
+    letter-spacing: 50px;
+    box-shadow: 0 1px 30px rgba(0,0,0,.4);
     text-shadow: 2px 2px 4px #000000;
-  font-family: 'Open Sans', sans-serif;
-  border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 4px;
 }
 body
 {
-  background: #27415c;;
-  font-family: 'Open Sans', sans-serif;
-  color: #222;
+    background: #27415c;;
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
     margin: 0px 30px 30px 30px;
 }
 .title
 {
-  width: inherit;
-  overflow: hidden;
+    width: inherit;
+    overflow: hidden;
 }
-a 
+a
 {
-  width: 320px;
-  color: currentColor;
-  text-decoration: none;
+    width: 320px;
+    color: currentColor;
+    text-decoration: none;
 }
 #flex
 {
     margin-left: 250px;
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 
 }
 
-p 
+p
 {
-  font-size: 13px;
+    font-size: 13px;
 }
 
-a:hover .card-outmore 
+a:hover .card-outmore
 {
-  background: #2C3E50;
-  color: #fff;
+    background: #2C3E50;
+    color: #fff;
 }
 
 a:hover .thecard
 {
-  box-shadow: 0 10px 60px rgba(0,0,0,.6);
+    box-shadow: 0 10px 60px rgba(0,0,0,.6);
 }
 
-.thecard 
+.thecard
 {
-  width: inherit;
-  margin: 5% auto;
-  box-shadow: 0 1px 20px rgba(0,0,0,.4);
-  background-color: #fff;
-  border-radius: 4px;
-  transition: 400ms ease;
+    width: inherit;
+    margin: 5% auto;
+    box-shadow: 0 1px 20px rgba(0,0,0,.4);
+    background-color: #fff;
+    border-radius: 4px;
+    transition: 400ms ease;
 }
 
 img
 {
-  width: inherit;
-  height: inherit;
-  border:none;
+    width: inherit;
+    height: inherit;
+    border:none;
 }
 .source
 {
-  color: white;
-  padding: 5px;
-  background-color: steelblue;
-  position: relative;
-  bottom: 25px;
+    color: white;
+    padding: 5px;
+    background-color: steelblue;
+    position: relative;
+    bottom: 25px;
 }
 
 .card-img{
-  height: 225px;
-  width:inherit;;
-  border-radius: 4px 4px 0px 0px;
+    height: 225px;
+    width:inherit;;
+    border-radius: 4px 4px 0px 0px;
 }
 
 .card-caption {
     height: 220px;
-  position: relative;
-  background: #ffffff;
-  padding: 15px 25px 5px 25px;
-  border-radius: 0px 0px 4px 4px;
+    position: relative;
+    background: #ffffff;
+    padding: 15px 25px 5px 25px;
+    border-radius: 0px 0px 4px 4px;
 }
 .desc
 {
@@ -117,11 +117,11 @@ img
 }
 
 h1 {
-  font-size: 17px;
+    font-size: 17px;
 }
 
 h5 {
-  margin:0;
+    margin:0;
 }
 .sidenav
 {
